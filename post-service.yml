@@ -1,2 +1,6 @@
   mongodb:
     uri: mongodb://localhost:27017/post
+
+build:
+  id: "Updated product2245"
+  name: "Product-microservice"
