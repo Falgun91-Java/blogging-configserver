@@ -1,5 +1,5 @@
 mongodb:
   uri: mongodb://localhost:27017/post
 build:
-  id: "Updated-Bus-refresh-product2245"
-  name: "Updated Product-microservice-with-Rabbitmq"
+  id: "Updated-Bus-refresh-product2245 SECOND TIME"
+  name: "Updated Product-microservice-with-Rabbitmq SECOND TIME"
