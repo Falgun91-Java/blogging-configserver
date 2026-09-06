@@ -1,5 +1,10 @@
-mongodb:
+spring:
+  
+  mongodb:
     uri: ${DB_URL}
+
+  config:
+    import: configserver:http://localhost:9090
 
   mail:
     host: ${EMAIL_HOST}
@@ -12,9 +17,9 @@ mongodb:
           auth: true
           starttls:
             enable: true
-          connectiontimeout: 5000
-          timeout: 5000
-          writetimeout: 5000
+            connectiontimeout: 5000
+            timeout: 5000
+            writetimeout: 5000
 
   data:
     redis:
@@ -26,12 +31,12 @@ mongodb:
       client:
         registration:
           google:
-            client-id: ${OAUTH_CLIENT_ID}
-            client-secret: ${OAUTH_SECRET}
-            scope:
-              - openid
-              - profile
-              - email
+          client-id: ${OAUTH_CLIENT_ID}
+          client-secret: ${OAUTH_SECRET}
+          scope:
+            - openid
+            - profile
+            - email
 
 image:
   path: images/
@@ -53,3 +58,6 @@ logging:
     org.springframework.security.access: DEBUG
     org.springframework.security.oauth2: DEBUG
     org.springframework.security.oauth2.client: TRACE
+
+server:
+  port: 8081
