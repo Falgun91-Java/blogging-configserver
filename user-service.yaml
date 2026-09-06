@@ -46,10 +46,8 @@ logging:
     org.springframework.security.access: DEBUG
     org.springframework.security.oauth2: DEBUG
     org.springframework.security.oauth2.client: TRACE
-
 server:
   port: 8081
-
 build:
    id: "user2246"
   name: "User-microservice"
