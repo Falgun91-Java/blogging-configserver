@@ -49,5 +49,5 @@ logging:
 server:
   port: 8081
 build:
-  id: "user2246"
-  name: "User-microservice"
+  id: "Updated user2246"
+  name: "Updated User-microservice"
