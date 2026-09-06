@@ -1,10 +1,6 @@
 spring:
-  
   mongodb:
     uri: ${DB_URL}
-
-  config:
-    import: configserver:http://localhost:9090
 
   mail:
     host: ${EMAIL_HOST}
@@ -31,12 +27,12 @@ spring:
       client:
         registration:
           google:
-          client-id: ${OAUTH_CLIENT_ID}
-          client-secret: ${OAUTH_SECRET}
-          scope:
-            - openid
-            - profile
-            - email
+            client-id: ${OAUTH_CLIENT_ID}
+            client-secret: ${OAUTH_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
 
 image:
   path: images/
