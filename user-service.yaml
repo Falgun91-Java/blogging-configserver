@@ -49,5 +49,5 @@ logging:
 server:
   port: 8081
 build:
-  id: "Updated user2246 - Second Time"
-  name: "Updated User-microservice"
+  id: "Updated user2246 - Bus Refresh Time"
+  name: "Updated -12 User-microservice"
