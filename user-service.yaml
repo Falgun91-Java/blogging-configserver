@@ -1,7 +1,6 @@
 spring:
   mongodb:
     uri: ${DB_URL}
-
   mail:
     host: ${EMAIL_HOST}
     port: ${EMAIL_PORT}
@@ -16,12 +15,10 @@ spring:
             connectiontimeout: 5000
             timeout: 5000
             writetimeout: 5000
-
   data:
     redis:
       host: localhost
       port: ${REDIS_PORT}
-
   security:
     oauth2:
       client:
@@ -33,18 +30,13 @@ spring:
               - openid
               - profile
               - email
-
 image:
   path: images/
-
 PostImage:
   path: postImages/
-
 OTP_EXPIRY_SECONDS: 200
-
 secret:
   key: ${SECURE_KEY}
-
 logging:
   level:
     com.user.service: DEBUG
@@ -54,6 +46,5 @@ logging:
     org.springframework.security.access: DEBUG
     org.springframework.security.oauth2: DEBUG
     org.springframework.security.oauth2.client: TRACE
-
 server:
   port: 8081
