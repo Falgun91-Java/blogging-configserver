@@ -52,4 +52,4 @@ server:
 
 build:
    id: "user2246"
-   name: "User-microservice"
+  name: "User-microservice"
