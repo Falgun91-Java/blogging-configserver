@@ -3,3 +3,12 @@ mongodb:
 build:
   id: "Updated-Bus-refresh-product2245 SECOND TIME"
   name: "Updated Product-microservice-with-Rabbitmq SECOND TIME"
+logging:
+  level:
+    root: DEBUG
+  file:
+    name: "log/{spring.application.name}.log"
+  pattern:
+    console: "%d[yyyy-MM-dd HH:mm:ss] %-5level %logger{36} - %msg%n"
+  console:
+    enabled: true
